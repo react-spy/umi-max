@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "author": "sunpanyu <996251389@qq.com>",
+  "scripts": {
+    "analyze": "cross-env ANALYZE=1 max build",
+    "build": "cross-env BUILD_ENV=prod max build",
+    "format": "prettier --cache --write .",
+    "postinstall": "max setup",
+    "prepare": "husky install",
+    "setup": "max setup",
+    "start": "cross-env port=5000 BUILD_ENV=dev max dev"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@ant-design/pro-components": "^2.0.1",
+    "@umijs/max": "^4.0.38",
+    "ahooks": "^3.7.2",
+    "antd": "^5.0.7",
+    "classnames": "^2.3.2",
+    "dayjs": "^1.11.7",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "cross-env": "^7.0.3",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.1.2"
+  }
+}
