@@ -4,6 +4,7 @@
   "scripts": {
     "analyze": "cross-env ANALYZE=1 max build",
     "build": "cross-env BUILD_ENV=prod max build",
+    "build:dev": "cross-env BUILD_ENV=prod max build",
     "format": "prettier --cache --write .",
     "postinstall": "max setup",
     "prepare": "husky install",
